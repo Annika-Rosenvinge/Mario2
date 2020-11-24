@@ -2,7 +2,7 @@ CREATE DATABASE MarioPizza;
 /*Pizza table oprettes
 */
 CREATE TABLE pizza (
-	pizzaID int not null primary key,
+    pizzaID int not null primary key,
     pizzaName varchar(255) not null,
     ingredients varchar(255) not null,
     price int not null
@@ -16,7 +16,7 @@ values ( 1, "Vesuvio", "Tomatsauce, ost, skinke, oregano", 57);
 /* Ordre costumer table oprettes
 */
 CREATE TABLE customer(
-	cusID int not null auto_increment primary key,
+    cusID int not null auto_increment primary key,
     cusName varchar(255) not null, 
     cusPhone int default null
 );
@@ -24,7 +24,7 @@ CREATE TABLE customer(
 /* ordre table oprettes
 */
 CREATE TABLE ordre (
-	pizzaID int not null,
+    pizzaID int not null,
     cusID int not null,
     cusName varchar (255) not null,
     total int not null,
